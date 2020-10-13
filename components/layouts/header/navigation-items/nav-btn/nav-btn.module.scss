@@ -1,0 +1,18 @@
+.navBtn {
+  padding: 0.575em 0.9375em;
+  border: 0;
+  font-size: 0.9375em;
+  font-weight: 600;
+  background-color: transparent;
+  color: var(--c-gray-7);
+  border-radius: 0.25em;
+  cursor: pointer;
+  transition: var(--t-main);
+
+  &:hover,
+  &:focus {
+    background-color: #eff3fa;
+    color: var(--c-gray);
+    transform: translateY(-0.18em);
+  }
+}

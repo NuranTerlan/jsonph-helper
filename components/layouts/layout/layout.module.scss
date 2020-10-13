@@ -1,0 +1,13 @@
+.layout {
+  display: grid;
+  grid-template-rows: 4.375em 1fr;
+  background-color: transparent;
+
+  main {
+    background-color: transparent;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+}

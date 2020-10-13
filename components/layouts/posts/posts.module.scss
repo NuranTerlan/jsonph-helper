@@ -1,0 +1,25 @@
+.postsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2.5rem;
+
+  h1 {
+    font-size: 3.125rem;
+    font-weight: 800;
+    color: var(--c-forest-green);
+    text-align: center;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 3.5rem;
+  }
+
+  .posts {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    grid-auto-rows: auto;
+    grid-gap: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
