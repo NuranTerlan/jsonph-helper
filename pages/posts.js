@@ -18,7 +18,6 @@ const PostsPage = ({ isLoggedIn }) => {
         <div className={styles.appContainer}>
             <Head>
                 <title>JSONplaceholder &bull; UI &bull; Posts</title>
-                <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <LayoutBuilder>

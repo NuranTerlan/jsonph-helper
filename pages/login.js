@@ -18,7 +18,6 @@ const LoginPage = ({ isLoggedIn }) => {
         <div className={styles.appContainer}>
             <Head>
                 <title>JSONplaceholder &bull; UI &bull; Login</title>
-                <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <LayoutBuilder>
