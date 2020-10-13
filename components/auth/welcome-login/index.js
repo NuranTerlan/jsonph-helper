@@ -8,7 +8,7 @@ import styles from "./welcome-login.module.scss";
 import FormInput from "../../common/form/input";
 import FormBtn from "../../common/form/button";
 
-const WelcomeBox = ({ login, className }) => {
+const WelcomeBox = ({ appKey, login, className }) => {
 
     const [key,setKey] = useState("");
     const [typeError,setTypeError] = useState("");
@@ -19,7 +19,10 @@ const WelcomeBox = ({ login, className }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (process.env.NEXT_PUBLIC_DEVELOPMENT_ENV_VARIABLE === key) {
+
+        // You can use here your secret APIKEY ( with .env.local file ( API_KEY="blablabla..." ) ) for some auth reason, but in this program we don't need it.
+        // Because Welcome box tell us what we must type on the input while logging in ! ( it means that this key is not our secret )
+        if (key === appKey) {
             setTypeError("");
             login();
             // console.log("Logged in !")
