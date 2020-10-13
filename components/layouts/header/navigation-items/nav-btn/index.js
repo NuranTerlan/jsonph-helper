@@ -4,11 +4,11 @@ import cn from "classnames";
 
 import styles from "./nav-btn.module.scss";
 
-const NavBtn = ({ link = "#", children, className, ...props }) => {
+const NavBtn = ({ link = "#", isSelected = false,  children, className, ...props }) => {
   return (
     <Link href={link}>
       <button
-          className={cn(styles.navBtn, className)}
+          className={cn(styles.navBtn, isSelected && styles.selected, className)}
           {...props}
       >
         {children}
