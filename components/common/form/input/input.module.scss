@@ -1,0 +1,49 @@
+.input {
+  width: 100%;
+  position: relative;
+
+  input {
+    font-family: inherit;
+    padding: 1.125rem 1.25rem;
+    border-radius: 0.25em;
+    background-color: #f7fafd;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--c-gray);
+    font-weight: 600;
+    transition: var(--t-main);
+
+    &::placeholder {
+      color: #a4acbb;
+      font-weight: 400;
+    }
+
+    &:focus {
+      border: 0;
+      outline: none;
+      background-color: #eaf0f5;
+    }
+  }
+}
+
+.none {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 0.5rem);
+  height: calc(100% - 0.5rem);
+  box-sizing: content-box;
+  pointer-events: none;
+
+  rect {
+    transform: translateX(0.37%);
+    color: #464e5f;
+  }
+}
+
+.dashed {
+  display: block;
+}
