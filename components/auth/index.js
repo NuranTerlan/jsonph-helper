@@ -7,10 +7,14 @@ import WelcomeBox from "./welcome-login";
 import FormBtn from "../common/form/button";
 
 const Login = ({ className, ...props}) => {
+
+    // NOT SECRET. Don't do this on your own secure project !
+    let key = "JSONPLACEHOLDER"
+
   return (
     <>
         <div className={cn(styles.container, className)} {...props}>
-          <WelcomeBox />
+          <WelcomeBox appKey={key} />
           <FormBtn
             isLink
             url="https://jsonplaceholder.typicode.com/"
