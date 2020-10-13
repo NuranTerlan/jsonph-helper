@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 4.375em);
+  width: 100%;
+  padding-top: 1.25rem;
+
+  .server {
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
+
+    button {
+      background-color: var(--c-forest-green);
+    }
+  }
+}
