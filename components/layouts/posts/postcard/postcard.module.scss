@@ -8,6 +8,12 @@
   align-items: center;
   box-shadow: 0 67px 80px rgba(0, 0, 0, 0.09), 0 20px 33.4px rgba(0, 0, 0, 0.06), 0 8px 17.9px rgba(0, 0, 0, 0.04), 0 3px 10px rgba(0, 0, 0, 0.01), 0 1px 5.3px rgba(0, 0, 0, 0.032), 0 0.2px 2.2px rgba(0, 0, 0, 0.016);
   overflow: hidden;
+  transition: all 300ms;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-.65rem);
+  }
 
   .title {
     text-align: start;
