@@ -7,9 +7,9 @@ import Header from "../header";
 
 const LayoutBuilder = ({ children, className }) => {
   return (
-    <div className={cn(styles.layout, className)}>
+    <div className={cn(styles.layout)}>
       <Header />
-      <main>{children}</main>
+      <main className={cn(className)}>{children}</main>
     </div>
   );
 };
