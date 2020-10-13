@@ -16,3 +16,14 @@
     transform: translateY(-0.18em);
   }
 }
+
+.selected {
+  background-color: var(--c-forest-red);
+  color: var(--c-white-alt);
+
+  &:hover,
+  &:focus {
+    background-color: var(--c-forest-red);
+    color: var(--c-white-alt);
+  }
+}
