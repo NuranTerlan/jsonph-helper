@@ -5,9 +5,9 @@ import cn from "classnames";
 import styles from "./postcard.module.scss";
 
 
-const PostCard = ({ link = "#", num, title, className }) => {
+const PostCard = ({ template = "#", link = "#", num, title, className }) => {
     return (
-        <Link href={link}>
+        <Link href={link} as={template} >
             <div className={cn(styles.card, className)}>
                 <h2 className={styles.title}>{title}</h2>
                 <span className={styles.order}>{num}</span>
