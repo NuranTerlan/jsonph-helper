@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { getData } from "../../../store/actions/repositoryActions";
-import { postsRequest } from "../../../axios/requestEndpoints";
+import { getPostsRequest } from "../../../axios/requestEndpoints";
 import cn from "classnames";
 
 import styles from "./posts.module.scss";
@@ -15,13 +15,14 @@ const Posts = ({ loading, data, onGetData, className, ...props }) => {
 
     useEffect(() => {
         const getPostsAsync = async () => {
-            await onGetData(postsRequest,{...props});
+            await onGetData(getPostsRequest,{...props});
         }
         getPostsAsync();
-    },[postsRequest]);
+    },[getPostsRequest]);
 
     useEffect(() => {
-        setPosts(data);
+        if (Array.isArray(data))
+            setPosts(data);
     },[data])
 
     return (
@@ -30,7 +31,7 @@ const Posts = ({ loading, data, onGetData, className, ...props }) => {
             {loading === true ? <Loader /> : (
                 <div className={styles.posts}>
                 {posts && (posts.map(post => {
-                    return <PostCard key={post.id} num={post.id} title={post.title} />
+                    return <PostCard template={`/posts/${post.id}`} link={"/posts/[id]"} key={post.id} num={post.id} title={post.title} />
                 }))}
             </div>)}
         </div>
