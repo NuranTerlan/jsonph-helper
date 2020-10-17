@@ -17,7 +17,7 @@ const Login = ({ className, ...props}) => {
           <WelcomeBox appKey={key} />
           <FormBtn
             isLink
-            url="https://jsonplaceholder.typicode.com/"
+            url="https://my-json-server.typicode.com/NuranTerlan/blog-data"
             className={styles.server}
           >
             Application Server
