@@ -17,6 +17,7 @@ const UsersPage = ({ isLoggedIn }) => {
         <div className={styles.appContainer}>
             <Head>
                 <title>JSONplaceholder &bull; UI &bull; Users</title>
+                <meta name="description" content="JSONPlaceholder Helper Project. Users from custom json server" />
             </Head>
 
             <LayoutBuilder>
