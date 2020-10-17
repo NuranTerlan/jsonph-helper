@@ -18,6 +18,7 @@ const LoginPage = ({ isLoggedIn }) => {
         <div className={styles.appContainer}>
             <Head>
                 <title>JSONplaceholder &bull; UI &bull; Login</title>
+                <meta name="description" content="JSONPlaceholder Helper Project created for learning to use Redux state management tool in NextJs project. Redux with NextJs, React, Global State. Context in NextJs. Global Context in React. Created by DEVVHALE. Nuran Terlan 2020" />
             </Head>
 
             <LayoutBuilder>
