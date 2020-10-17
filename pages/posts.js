@@ -18,6 +18,7 @@ const PostsPage = ({ isLoggedIn }) => {
         <div className={styles.appContainer}>
             <Head>
                 <title>JSONplaceholder &bull; UI &bull; Posts</title>
+                <meta name="description" content="JSONPlaceholder Helper Project. Posts from custom json server. my-json-server.typicode. my-json-server. Custom fetching data with axios in NextJs. Global Context with Redux. Initial Props for server-side rendering. How to use axios in NextJs" />
             </Head>
 
             <LayoutBuilder>
