@@ -14,6 +14,7 @@ const InfoPage = () => {
         <div className={styles.appContainer}>
             <Head>
                 <title>JSONplaceholder &bull; UI &bull; About & License</title>
+                <meta name="description" content="JSONPlaceholder Helper UI Custom Project. About jsonplaceholder. License/" />
             </Head>
 
             <LayoutBuilder className={styles.page}>
