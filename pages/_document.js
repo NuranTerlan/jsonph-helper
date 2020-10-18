@@ -11,8 +11,9 @@ class AppDocumentRef extends Document {
         return (
             <Html lang="en">
                 <Head>
-                    <link rel="icon" href="/favicon.ico" />
+                    <link rel="shortcut icon" href="/favicon.ico" />
                     <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta name="robots" content="index, follow" />
                     {/* Chrome, Firefox OS and Opera */}
                     <meta name="theme-color" content="#880000" />
@@ -25,8 +26,8 @@ class AppDocumentRef extends Document {
                     />
                 </Head>
                 <body>
-                <Main />
-                <NextScript />
+                    <Main />
+                    <NextScript />
                 </body>
             </Html>
         );
