@@ -11,8 +11,16 @@
       margin-top: 2rem;
     }
 
-    button {
+    .buttons {
       margin-top: 2rem;
+      display: flex;
+
+      .source button {
+        background-color: transparent;
+        color: var(--c-black);
+        box-shadow: none;
+        margin-right: 1rem;
+      }
     }
   }
 }
