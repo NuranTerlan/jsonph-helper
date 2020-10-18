@@ -19,7 +19,10 @@ const InfoPage = () => {
 
             <LayoutBuilder className={styles.page}>
                 <h1>About & License</h1>
-                <FormBtn onClick={() => router.back()}>Back</FormBtn>
+                <div className={styles.buttons}>
+                    <FormBtn isLink url="https://github.com/NuranTerlan" className={styles.source} >Source Code</FormBtn>
+                    <FormBtn onClick={() => router.back()}>Back</FormBtn>
+                </div>
             </LayoutBuilder>
         </div>
     );
