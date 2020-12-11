@@ -27,7 +27,7 @@ const Posts = ({ loading, data, onGetData, className, ...props }) => {
 
     return (
         <div className={cn(styles.postsContainer, className)}>
-            <h1>Dummy Posts</h1>
+            <h1>Dummy Posts 🚀</h1>
             {loading === true ? <Loader /> : (
                 <div className={styles.posts}>
                 {posts && (posts.map(post => {
